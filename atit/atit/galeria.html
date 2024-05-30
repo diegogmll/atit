@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Galería</title>
+        <link rel="icon" href="logoacademia.jpeg" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+        <style>
+                body{ /*Da estilo al cuerpo con un margen de 0*/
+            margin: 0;
+            padding: 0;
+            font-family: 'Questrial', sans-serif; 
+            font-size: 18px; 
+           }
+           .menu{ /*Da estilo al menu superior de la página*/
+            width: 100%;
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 1.125em;
+            top: 0;
+            left: 0;
+            color: rgb(19, 33, 188);
+            background-color: rgb(255, 255, 255);
+            z-index: 1000; /* Asegura que el menú esté encima del carrusel */
+            box-shadow: rgb(194, 194, 194) 0em 0.2em 0.4em;
+        }
+        .menu-items{ /*Da estilo a los elementos del menú superior*/
+            margin: 1px;
+            margin-left: 2vw;
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+        .menu-items2{  /*Da estilo a los elementos del menu superior*/
+            flex-direction: row;
+            margin: 1px;
+            display: flex;
+            margin-right: 3vw;
+            align-items: center;
+            font-size: 20px;
+        }
+        a{ /*Da estilo a los link de tipo <a>*/
+            color: rgb(255, 119, 0);
+            text-decoration: none;
+            font-size: 0.93em;
+        }
+        a:hover{
+            color: rgb(193, 101, 20);
+            text-decoration: none;
+            font-weight: bold;
+            transition-duration: 0.3s;
+        }
+        .img3{ /*Da estilo a la imagen del manú superior*/
+                width:20%;
+                height:20%;
+                border-radius: 0;
+                border: none;
+            }
+            .div4{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 17vh;
+        }
+        .div5{
+            background-color: orange;
+            height: 2.5vw;
+            width: 1.5vw;
+        }
+        .hr2{
+            margin-right:  13.5vw;
+            margin-left:  13.5vw;
+            margin-bottom: 2vh;
+            margin-top: 2vh;
+            color: white;
+            box-shadow: rgb(128, 128, 128) 0em 0.2em 0.7em;
+        }
+        footer{
+        background-color:  rgb(255, 153, 0);
+        padding: 1em;
+        color: white;
+        width: 100%;
+        margin-top: 2vh;
+       }
+            h1{/*Asigna al título principal alineado al centro, con un tipo de tipografía, tamaño y color*/
+                text-align: center;
+                font-size: 3rem;
+                color: #2b3185;
+            }
+            .container1{/*Asigna al contenedor tamaño, margen interno, y orden en sus elementos*/
+                width: 100%;
+                margin: 0;
+                padding: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .container2{/*Asigna al contenedor margen externo, un tamaño y un tamaño máximo*/
+                max-width: 60%;
+                width: max-content;
+                text-align: center;
+                margin: 1rem;
+            }
+            .container3{/*Asigna al contenedor margen externo, un tamaño y un tamaño máximo*/
+                max-width: 60%;
+                width: max-content;
+                text-align: center;
+                margin: 1rem;
+            }
+            .container4{/*Asigna al contenedor un tamaño máximo, margen externo, y da orden a los elementos*/
+                max-width: 60%;
+                text-align: center;
+                margin: 1rem;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .h3{/*Asigna al subtítulo un color*/
+                color: black;
+                font-size: 40px;
+                margin: 1rem;
+            }
+            @media (max-width: 1200px) {/*Responsividad*/
+            .container2,
+            .container3,
+            .container4{
+                width: 100%;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="menu"> <!--Contenedor para menú superior de la página-->
+            <div class="menu-items" style="font-size: 28px;"><img src="logo.png" class="img3"><strong>&emsp;ATIT academy</strong></div>
+            <div class="menu-items2">
+                <strong>
+                    <a href="../../index.html">Home</a>&emsp;&emsp;
+                    <a href="personal.html">Personal</a>&emsp;&emsp;
+                    <a href="proyectos.html">Proyectos</a>&emsp;&emsp;
+                    <a href="indicadores.html">Indicadores</a>&emsp;&emsp;
+                    <a href="interaccion.html">Interacción</a>&emsp;&emsp;
+                    <a href="ayuda.html">Ayuda</a>
+                </strong>
+            </div>
+        </div>
+        <div class="div4" id="inicio"><!--Contenedor para encabezado-->
+            <div class="div5" style="background-color: rgb(253, 244, 227);"></div>
+            <div class="div5" style="background-color: rgb(250, 219, 160);"></div>
+            <div class="div5" style="background-color: rgb(253, 204, 113);"></div>
+            <div class="div5" style="background-color: rgb(251, 176, 36);"></div>
+            <div class="div5" style="background-color: orange;"></div>&emsp;
+            <h1 class="h3" style="font-size: 40px;">Galería</h1>&emsp;
+            <div class="div5" style="background-color: orange;"></div>
+            <div class="div5" style="background-color: rgb(251, 176, 36);"></div>
+            <div class="div5" style="background-color: rgb(253, 204, 113);"></div>
+            <div class="div5" style="background-color: rgb(250, 219, 160);"></div>
+            <div class="div5" style="background-color: rgb(253, 244, 227);"></div>
+
+        </div><hr class="hr2">
+        <div class="container1"><!--Contenedor padre-->
+            <div class="container2"><!--Contenedor para video-->
+                <video src="LABO.mp4" width="700rem" controls muted playsinline></video>
+            </div>
+            <div class="container3"><!--Contenedor para imagen-->
+                <img src="robots.jpeg" width="300rem" alt="robots">
+            </div>
+        </div>
+
+        <div class="container1"><!--Contenedor padre-->
+            <div class="container2"><!--Contenedor para imagen-->
+                <img src="cartelupslp.jpeg" width="500rem" alt="cartelupslp">
+            </div>
+            <div class="container4">
+                <div class="container3"><!--Contenedor para video-->
+                <video src="CNT2.mp4" width="500rem" controls muted playsinline></video>
+                </div>
+                <div class="container3"><!--Contenedor para imagen-->
+                <img src="alumnos2.jpeg" alt="alumnos" width="500rem">
+                </div>
+            </div>
+        </div>
+
+        <div class="container1"><!--Contenedor padre-->
+            <div class="container2"><!--Contenedor para video-->
+                <video src="CNT.mp4" width="300rem" controls muted playsinline></video>
+            </div>
+            <div class="container3"><!--Contenedor para imagen-->
+                <img src="cartel.jpeg" width="400rem" alt="cartel">
+            </div>
+            <div class="container3"><!--Contenedor para imagen-->
+                <img src="maestros2.jpeg" width="400rem" alt="maestros2">
+            </div>
+        </div>
+
+        <div class="container1"><!--Contenedor padre-->
+            <div class="container2"><!--Contenedor para imagen-->
+                <img src="maestros.jpeg" width="400rem" alt="maestros">
+            </div>
+            <div class="container3"><!--Contenedor para imagen-->
+                <img src="aula1.jpeg" width="220rem" alt="aula1">
+            </div>
+            <div class="container3"><!--Contenedor para imagen-->
+                <img src="alumnos3.jpeg" width="400rem" alt="alumnos3">
+            </div>
+        </div>
+
+        <div class="container1">
+            <div class="container2">
+                <img src="alumnos.jpeg" width="500rem" alt="alumnos">
+            </div>
+            <div class="container3">
+                <img src="girls.jpeg" width="500rem" alt="girls">
+            </div>
+        </div>
+        <footer>
+            <p style="text-align: center; line-height: 30px;"><strong>Derechos de autor&copy; 2024. Todos los derechos reservados.</strong>
+            <br>Urbano Villalón num.500, Col. La Ladrillera, San Luis Potosí, S.L.P. México, C.P. 78363 </p>
+        </footer>
+        <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq3132ba5cb74a18b782ca86e17f6d700e1b6e9bf7a532b5df87cda8fab0532d1b" defer></script>
+    
+    </body>
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interacción</title>
+    <link rel="icon" href="logoacademia.jpeg" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        
+          <script type="text/javascript" src="js/jquery/jquery-1.7.1.min.js"></script>
+          <script type="text/javascript" src="js/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+          <script type="text/javascript" src="jspdf.js"></script>
+      
+          <script type="text/javascript" src="jspdf.plugin.addimage.js"></script>
+      
+          <script type="text/javascript" src="jspdf.plugin.standard_fonts_metrics.js"></script>
+          <script type="text/javascript" src="jspdf.plugin.split_text_to_size.js"></script>
+          <script type="text/javascript" src="jspdf.plugin.from_html.js"></script>
+        <style>
+                body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Questrial', sans-serif; 
+            font-size: 18px; 
+           }
+           .menu{
+            width: 100%;
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 1.125em;
+            top: 0;
+            left: 0;
+            color: rgb(19, 33, 188);
+            background-color: rgb(255, 255, 255);
+            z-index: 1000; /* Asegura que el menú esté encima del carrusel */
+            box-shadow: rgb(194, 194, 194) 0em 0.2em 0.4em;
+        }
+        .menu-items{
+            margin: 1px;
+            margin-left: 2vw;
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+        .menu-items2{
+            flex-direction: row;
+            margin: 1px;
+            display: flex;
+            margin-right: 3vw;
+            align-items: center;
+            font-size: 20px;
+        }
+        a{
+            color: rgb(255, 119, 0);
+            text-decoration: none;
+            font-size: 0.93em;
+        }
+        a:hover{
+            color: rgb(193, 101, 20);
+            text-decoration: none;
+            font-weight: bold;
+            transition-duration: 0.3s;
+        }
+        .div4{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 17vh;
+        }
+        .div5{
+            background-color: orange;
+            height: 2.5vw;
+            width: 1.5vw;
+        }
+        .div6{
+            background-color: orange;
+            height: 1.5vw;
+            width: 1vw;
+        }
+        .hr2{
+            margin-right:  13.5vw;
+            margin-left:  13.5vw;
+            /* margin-bottom: 5vh; */
+            margin-top: 2vh;
+            color: white;
+            box-shadow: rgb(128, 128, 128) 0em 0.2em 0.7em;
+        }
+        .hr3{
+            margin-right:  13.5vw;
+            margin-left:  13.5vw;
+            /* margin-bottom: 5vh; */
+            margin-top: 4vh;
+            color: white;
+            box-shadow: rgb(128, 128, 128) 0em 0.2em 0.7em;
+        }
+        footer{
+        background-color:  rgb(255, 153, 0);
+        padding: 1em;
+        color: white;
+        width: 100%;
+        margin-top: 2vh;
+       }
+       .img3{
+                width:20%;
+                height:20%;
+                border-radius: 0;
+                border: none;
+            }
+            .h3{/*Asigna al subtítulo un color*/
+                color: black;
+                font-size: 40px;
+                margin: 1rem;
+            }
+            .h4{/*Asigna al subtítulo un color*/
+                color: black;
+                font-size: 30px;
+            }
+            @media only screen and (max-width: 600px) {/*telefono*/
+           .hr3{
+            margin-right:  13.5vw;
+            margin-left:  13.5vw;
+            /* margin-bottom: 5vh; */
+            margin-top: 25vh;
+            color: white;
+            box-shadow: rgb(128, 128, 128) 0em 0.2em 0.7em;
+           }
+        }
+
+            /* Estilos para tabletas */
+        @media only screen and (min-width: 601px) and (max-width: 1024px) {
+            
+        }
+
+        /* Estilos para pantallas grandes (escritorio) */
+        @media only screen and (min-width: 1025px) {
+            /* Estilos específicos para pantallas grandes */
+           
+        }
+        </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="menu-items" style="font-size: 28px;"><img src="logo.png" class="img3"><strong>&emsp;ATIT academy</strong></div>
+        <div class="menu-items2">
+            <strong>
+                <a href="../../index.html">Home</a>&emsp;&emsp;
+                <a href="personal.html">Personal</a>&emsp;&emsp;
+                <a href="proyectos.html">Proyectos</a>&emsp;&emsp;
+                <a href="galeria.html">Galeria</a>&emsp;&emsp;
+                <a href="indicadores.html">Indicadores</a>&emsp;&emsp;
+                <a href="ayuda.html">Ayuda</a>
+            </strong>
+        </div>
+    </div>
+    
+    <div class="div4" id="inicio" style="margin-bottom: 2.5vh; margin-top: 16vh;">
+        <div class="div5" style="background-color: rgb(253, 244, 227);"></div>
+        <div class="div5" style="background-color: rgb(250, 219, 160);"></div>
+        <div class="div5" style="background-color: rgb(253, 204, 113);"></div>
+        <div class="div5" style="background-color: rgb(251, 176, 36);"></div>
+        <div class="div5" style="background-color: orange;"></div>&emsp;
+        <h1 class="h3" style="font-size: 40px;">Blog</h1>&emsp;
+        <div class="div5" style="background-color: orange;"></div>
+        <div class="div5" style="background-color: rgb(251, 176, 36);"></div>
+        <div class="div5" style="background-color: rgb(253, 204, 113);"></div>
+        <div class="div5" style="background-color: rgb(250, 219, 160);"></div>
+        <div class="div5" style="background-color: rgb(253, 244, 227);"></div>
+
+    </div><hr class="hr2"><center>
+        <div class="div4" style=" margin-top: 4vh;">
+            <div class="div6" style="background-color: rgb(202, 202, 255);"></div>
+            <div class="div6" style="background-color: rgb(167, 167, 253);"></div>
+            <div class="div6" style="background-color: rgb(111, 111, 252);"></div>
+            <div class="div6" style="background-color: rgb(61, 61, 253);"></div>
+            <div class="div6" style="background-color: blue;"></div>&emsp;
+            <h1 class="h4">Comentarios</h1>&emsp;
+            <div class="div6" style="background-color: blue;"></div>
+            <div class="div6" style="background-color:rgb(61, 61, 253);"></div>
+            <div class="div6" style="background-color:  rgb(111, 111, 252);"></div>
+            <div class="div6" style="background-color:  rgb(167, 167, 253);"></div>
+            <div class="div6" style="background-color: rgb(202, 202, 255);"></div>
+
+        </div>
+        <h3>Selecciona el área a la que quieres hacer tu comentario y escribe tu comentario.</h3>
+    <form id="myform" onsubmit="return comentarios()">
+        <label for="areas" >Elige el área a la que deseas hacer tu comentario: &emsp;</label>
+        <select id="areas" name="areas">
+            <option value="" disabled selected>Selecciona</option>
+            <option value="Personal">Personal</option>
+            <option value="Organizacion">Organización</option>
+            <option value="Horarios">Horarios</option>
+        </select><br><br>
+        <label for="comentario" >Escribe tu comentario: &emsp;</label>
+        <input id="comentario" type="text" placeholder="Escribe aquí..." ></input><br><br>
+        <input type="submit" class="btn btn-primary" style="background-color: rgb(232, 231, 229); width: 8vw; height: 4vh; border: 2px solid rgb(202, 200, 197); border-radius: 5px; margin-top: 1.5vh;">
+    </form>
+    <hr class="hr3" >
+    <div class="div4" style=" margin-top: 3vh;">
+        <div class="div6" style="background-color: rgb(202, 202, 255);"></div>
+        <div class="div6" style="background-color: rgb(167, 167, 253);"></div>
+        <div class="div6" style="background-color: rgb(111, 111, 252);"></div>
+        <div class="div6" style="background-color: rgb(61, 61, 253);"></div>
+        <div class="div6" style="background-color: blue;"></div>&emsp;
+        <h1 class="h4">Contacto</h1>&emsp;
+        <div class="div6" style="background-color: blue;"></div>
+        <div class="div6" style="background-color:rgb(61, 61, 253);"></div>
+        <div class="div6" style="background-color:  rgb(111, 111, 252);"></div>
+        <div class="div6" style="background-color:  rgb(167, 167, 253);"></div>
+        <div class="div6" style="background-color: rgb(202, 202, 255);"></div>
+
+    </div>
+    <h3>Selecciona el area a la que deseas contactar y explica el motivo:</h3>
+    <form class="forms" action="mailto:dgm5462@gmail.com" method="post" >
+        <p>Nombre: <input type="text" name="nombre" size="40" placeholder="Nombre" ></p><br>
+        <p>Teléfono (10 dígitos): <input type="number" name="numero" size="10" placeholder="000-000-0000"></p><br>
+        <p>Correo: <input type="text" name="correo" size="30" placeholder="ejem@gmail.com"></p><br>
+        <label for="areas" >Elige el área a la que deseas contactar: &emsp;</label>
+        <select id="areas" name="areas">
+            <option value="" disabled selected>Selecciona</option>
+            <option value="Personal">UPSLP</option>
+            <option value="Organizacion">ATIT</option>
+            <option value="Horarios">Líderes ATIT</option>
+        </select><br><br>
+        <label for="motivo" >Explica el motivo: &emsp;</label>
+        <input id="motivo" type="text" placeholder="Dudas, horarios, quejas..." ></input><br><br>
+        <input type="submit" class="btn btn-primary" style="background-color: rgb(232, 231, 229); width: 8vw; height: 4vh; border: 2px solid rgb(202, 200, 197); border-radius: 5px; margin-top: 1.5vh; margin-right: 2vw;">
+        <input type="reset" class="btn btn-primary" value="Borrar" style="background-color: rgb(232, 231, 229); width: 8vw; height: 4vh; border: 2px solid rgb(202, 200, 197); border-radius: 5px; margin-top: 1.5vh;">
+    </form><hr class="hr3">
+
+    <div class="div4" style=" margin-top: 3vh;">
+        <div class="div6" style="background-color: rgb(202, 202, 255);"></div>
+        <div class="div6" style="background-color: rgb(167, 167, 253);"></div>
+        <div class="div6" style="background-color: rgb(111, 111, 252);"></div>
+        <div class="div6" style="background-color: rgb(61, 61, 253);"></div>
+        <div class="div6" style="background-color: blue;"></div>&emsp;
+        <h1 class="h4">TEST DIAGNOSTICO ATIT</h1>&emsp;
+        <div class="div6" style="background-color: blue;"></div>
+        <div class="div6" style="background-color:rgb(61, 61, 253);"></div>
+        <div class="div6" style="background-color:  rgb(111, 111, 252);"></div>
+        <div class="div6" style="background-color:  rgb(167, 167, 253);"></div>
+        <div class="div6" style="background-color: rgb(202, 202, 255);"></div>
+
+    </div>
+    <h3>Lee con atención las preguntas y elige la opción que mas te identifique:</h3>
+    <form id="myform2" onsubmit="return resultados();">
+            1.- ¿Conoces los objetivos de la carrera de ITI?<br>
+        <input id="p1" name="p1" type="radio"  value=2 > Si
+        <input id="p1" name="p1" type="radio"  value=1> Se un poco
+        <input id="p1" name="p1" type="radio"  value=0> No
+        <br><br>
+        2.- ¿Conoces los objetivos de la carrera de ITEM?<br>
+        <input id="p2" name="p2" type="radio"  value=2 > Si
+        <input id="p2" name="p2" type="radio"  value=1> Se un poco
+        <input id="p2" name="p2" type="radio"  value=0> No
+        <br><br>
+        3-. ¿Conoces la mision de alguna de las 2 carreras?<br>
+        <input id="p3" name="p3" type="radio"  value=2 > Si
+        <input id="p3" name="p3" type="radio"  value=1> He escuchado un poco
+        <input id="p3" name="p3" type="radio"  value=0> No
+        <br><br>
+        4-. ¿Conoces la vision de alguna de las 2 carreras?<br>
+        <input id="p4" name="p4" type="radio"  value=2 > Si
+        <input id="p4" name="p4" type="radio"  value=1> Conozco lo básico
+        <input id="p4" name="p4" type="radio"  value=0> No
+        <br><br>
+        5-. ¿Tenías alguna idea de lo que significa ATIT previo a la lectura de este sitio?<br>
+        <input id="p5" name="p5" type="radio"  value=2 > Si
+        <input id="p5" name="p5" type="radio"  value=1> Tenía la nocion de lo que era
+        <input id="p5" name="p5" type="radio"  value=0> No
+        <br><br><br>
+        Introduce tu nombre: <input id="nombre" name="nombre" type="text" placeholder="Nombre"/></p>
+        <br><input type="submit" class="btn btn-primary" style="background-color: rgb(232, 231, 229); width: 8vw; height: 4vh; border: 2px solid rgb(202, 200, 197); border-radius: 5px; margin-top: 1.5vh; margin-right: 2vw;">
+        <br>
+    </form><br>
+    <hr class="hr2" style="margin-right:  28vw; margin-left:  28vw; margin-bottom: 3vh;">
+        <footer>
+            <p style="text-align: center; line-height: 30px;"><strong>Derechos de autor&copy; 2024. Todos los derechos reservados.</strong>
+            <br>Urbano Villalón num.500, Col. La Ladrillera, San Luis Potosí, S.L.P. México, C.P. 78363 </p>
+        </footer>
+
+    <script>
+        function comentarios(){
+            
+            var area= document.forms[0].areas.value;
+            var comentario=document.forms[0].comentario.value;
+            var doc = new jsPDF();
+            doc.setFontSize(27);
+            doc.text(20, 20, 'Universidad Politécnica de San Luis Potosí');
+            doc.text(20, 30, 'ATIT');
+            
+            doc.setFontSize(25);
+            doc.text(20, 50, 'COMMENTS SECTION');
+            doc.setFontSize(22);
+            doc.text(20, 75, '**Área a la que va dirigida el comentario: '+area);
+            doc.text(20, 90, '**Comentario: ');
+            var splitComentario = doc.splitTextToSize(comentario, 170);
+            doc.text(20, 100, splitComentario);
+            alert('¡Comentario enviado!')
+            var string = doc.output('datauristring');
+            var nuevaVentana = window.open();
+            nuevaVentana.document.write('<center><iframe style="width: 100%; height: 100%; background-color: transparent; border: transparent;" src="' + string + '"></iframe></center>');    
+            $('iframe').attr('src', string);
+
+            return true;
+        }
+
+        function resultados() {
+			
+            /*/INDICE DE RESULTADOS
+            0-2 -> Poco o nulo conocimiento de las carreras
+            2-5 -> Conoce lo básico de las carreras
+            5-7 -> Conoce las carreras
+            7-10 -> Conoce por completo las carreras
+            
+            */
+            var cont=0;
+            var cont2=0;
+            var cont3=0;
+            var cadena="p";
+            var texto2="";
+            for(i=0; i<5; i++){
+                cont3=i+1;
+                cadena2=cadena+cont3;
+                cont2=parseInt(document.forms[2][cadena2].value);
+                cont=cont+cont2;
+            }
+            
+            if(cont>=0 && cont<=2){
+                texto2="Obtuviste "+cont+" puntos y tu nivel es: POCO O NULO CONOCIMIENTO DE LAS CARRERAS";
+            }
+            else{
+                if(cont>2 && cont<=5){
+                    texto2="Obtuviste "+cont+" puntos y tu nivel es: CONOCIMIENTO BÁSICO DE LAS CARRERAS";
+                }
+                else{
+                    if(cont>5 && cont<=7){
+                        texto2="Obtuviste "+cont+" puntos y tu nivel es: CONOCIMIENTO MEDIO  DE LAS CARRERAS";
+                    }
+                    else{
+                        texto2="Obtuviste "+cont+" puntos y tu nivel es: CONOCIMIENTO COMPLETO DE LAS CARRERAS";
+                    }
+                }
+            }
+            
+            var doc = new jsPDF();
+            doc.setFontSize(20);
+            doc.text(20, 20, "TEST DIAGNÓSTICO DE CONOCIMIENTOS ATIT");
+            doc.text(20, 30, "UPSLP");
+            doc.text(20, 60,"Nombre: "+ document.forms[2].nombre.value);
+            var texto2=doc.splitTextToSize(texto2, 170);
+            doc.text(20, 70, "Resultado obtenido: ");
+            doc.text(20, 80, texto2);
+            var string = doc.output('datauristring');
+            var nuevaVentana = window.open();
+            nuevaVentana.document.write('<center><iframe style="width: 100%; height: 100%; background-color: transparent; border: transparent;" src="' + string + '"></iframe></center>');    
+            $('iframe').attr('src', string);
+
+            return true;
+            }  
+    </script>
+</center>
+<script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq3132ba5cb74a18b782ca86e17f6d700e1b6e9bf7a532b5df87cda8fab0532d1b" defer></script>
+
+</body>
+</html>

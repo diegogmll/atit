@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ayuda</title><!--Título de la página-->
+        <link rel="icon" href="logoacademia.jpeg" type="image/x-icon"><!--Icono del sitio web-->
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"><!--Librería para usar fuente de google-->
+        <style>
+            body{/*Asigna tipo de fuente a todo el documento*/
+            margin: 0;
+            padding: 0;
+            font-family: 'Questrial', sans-serif; 
+            font-size: 18px; 
+           }
+           .menu{/*Asigna tamaño, orden en los elementos, color de fondo, color de fuente y posición al menú*/
+            width: 100%;
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 1.125em;
+            top: 0;
+            left: 0;
+            color: rgb(19, 33, 188);
+            background-color: rgb(255, 255, 255);
+            z-index: 1000; /* Asegura que el menú esté encima del carrusel */
+            box-shadow: rgb(194, 194, 194) 0em 0.2em 0.4em;
+        }
+        .menu-items{/*Asigna margen y orden en los elementos del menu*/
+            margin: 1px;
+            margin-left: 2vw;
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+        .menu-items2{/*Asigna orden de los elemetos del menú*/
+            flex-direction: row;
+            margin: 1px;
+            display: flex;
+            margin-right: 3vw;
+            align-items: center;
+            font-size: 20px;
+        }
+        a{/*Asigna color a los enlaces*/
+            color: rgb(255, 119, 0);
+            text-decoration: none;
+            font-size: 0.93em;
+        }
+        a:hover{/*Asigna color a los enlaces cuando se seleccionan*/
+            color: rgb(193, 101, 20);
+            text-decoration: none;
+            font-weight: bold;
+            transition-duration: 0.3s;
+        }
+        .img3{/*Asigna tamaño a la imagen*/
+                width:20%;
+                height:20%;
+                border-radius: 0;
+                border: none;
+        }
+        h3{/*Asigna al subtítulo un color*/
+                color: black;
+                font-size: 35px;
+                margin: 1rem;
+            }
+            .div4{/*Asigna margen, tamaño y orden a los elementos del div*/
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 17vh;
+        }
+        .div5{/*Asigna color y tamaño al div*/
+            background-color: orange;
+            height: 2.5vw;
+            width: 1.5vw;
+        }
+        .hr2{/*Elemento de decoración*/
+            margin-right:  6vw;
+            margin-left:  6vw;
+            margin-bottom: 6vh;
+            margin-top: 4vh;
+            color: white;
+            box-shadow: rgb(128, 128, 128) 0em 0.2em 0.7em;
+        }
+        footer{/*Asigna color, margen, tamaño y color de fuente al pie de página*/
+        background-color:  rgb(255, 153, 0);
+        padding: 1em;
+        color: white;
+        width: 100%;
+        margin-top: 2vh;
+       }
+       .palito{/*Elemento de decoración*/
+           font-size: 45px;    
+           color: rgb(255, 157, 0); 
+           margin-left: 1.8vw;
+        }
+        .palitoAzul{/*Elemento de decoración*/
+           font-size: 45px;    
+           color: rgb(0, 38, 255); 
+           margin-left: 4vw;
+        }
+        .div8{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right:  9vw;
+            margin-left:  9vw;
+            border: 1px solid black;
+        }
+        .div6{
+            background-color: orange;
+            height: 1.5vw;
+            width: 1vw;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="menu"><!--Contenedor del menú de la página-->
+            <div class="menu-items" style="font-size: 28px;"><img src="logo.png" class="img3"><strong>&emsp;ATIT academy</strong></div>
+            <div class="menu-items2">
+                <strong>
+                    <a href="../../index.html">Home</a>&emsp;&emsp;
+                    <a href="personal.html">Personal</a>&emsp;&emsp;
+                    <a href="proyectos.html">Proyectos</a>&emsp;&emsp;
+                    <a href="galeria.html">Galería</a>&emsp;&emsp;
+                    <a href="interaccion.html">Interacción</a>&emsp;&emsp;
+                    <a href="indicadores.html">Indicadores</a>
+                </strong>
+            </div>
+        </div>
+
+        <div class="div4" id="inicio"><!--Contenedor de diseño de título-->
+            <div class="div5" style="background-color: rgb(253, 244, 227);"></div>
+            <div class="div5" style="background-color: rgb(250, 219, 160);"></div>
+            <div class="div5" style="background-color: rgb(253, 204, 113);"></div>
+            <div class="div5" style="background-color: rgb(251, 176, 36);"></div>
+            <div class="div5" style="background-color: orange;"></div>&emsp;
+            <h1 class="h3" style="font-size: 40px;">Ayuda</h1>&emsp;
+            <div class="div5" style="background-color: orange;"></div>
+            <div class="div5" style="background-color: rgb(251, 176, 36);"></div>
+            <div class="div5" style="background-color: rgb(253, 204, 113);"></div>
+            <div class="div5" style="background-color: rgb(250, 219, 160);"></div>
+            <div class="div5" style="background-color: rgb(253, 244, 227);"></div>
+        </div><center>
+        <h2>¡Visita alguno de nuestros grupos de ayuda aquí!</h2><br><br>
+        <button style="background-color: transparent; border: transparent; color: orange; text-decoration: underline; font-size: 20px;">-> Visita la página oficial de la UPSLP <-</button><br><br>
+        <button style="background-color: transparent; border: transparent; color: orange; text-decoration: underline; font-size: 20px;">-> Visita la página oficial del ATIT <-</button><br><br>
+        <hr class="hr2" style="margin-right:  10vw; margin-left: 10vw;">
+
+        <div class="div4" style="margin-top: -3vh;"><!--Contenedor para diseño de título-->
+            <div class="div5" style="background-color: rgb(202, 202, 255);"></div>
+            <div class="div5" style="background-color: rgb(167, 167, 253);"></div>
+            <div class="div5" style="background-color: rgb(111, 111, 252);"></div>
+            <div class="div5" style="background-color: rgb(61, 61, 253);"></div>
+            <div class="div5" style="background-color: blue;"></div>&emsp;&emsp;
+            <h1 class="h3">Redes Sociales</h1>&emsp;
+            <div class="div5" style="background-color: blue;"></div>
+            <div class="div5" style="background-color:rgb(61, 61, 253);"></div>
+            <div class="div5" style="background-color:  rgb(111, 111, 252);"></div>
+            <div class="div5" style="background-color:  rgb(167, 167, 253);"></div>
+            <div class="div5" style="background-color: rgb(202, 202, 255);"></div>
+        </div>
+        <h2>¡Visita nuestras redes sociales!</h2><br><br>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <a href="https://www.facebook.com/atit.upslp" target="_blank"><img src="fb.webp" style="height: 60px; width: 60px;"></a>
+            <a href="https://www.instagram.com/upslp_oficial/" target="_blank"><img src="ig.png" style="height: 56px; width: 74px;"></a>
+            <a href="http://atit.upslp.edu.mx/residencias.html" target="_blank"><img src="web.png" style="height: 51px; width: 51px; margin-left: 5px;"></a>
+        </div>
+
+    </center>
+        <hr class="hr2" style="margin-right:  9vw; margin-left: 9vw;">
+        <footer><!--Pie de página-->
+            <p style="text-align: center; line-height: 30px;"><strong>Derechos de autor&copy; 2024. Todos los derechos reservados.</strong>
+            <br>Urbano Villalón num.500, Col. La Ladrillera, San Luis Potosí, S.L.P. México, C.P. 78363 </p>
+        </footer>
+        <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq3132ba5cb74a18b782ca86e17f6d700e1b6e9bf7a532b5df87cda8fab0532d1b" defer></script>
+
+    </body>
+</html>

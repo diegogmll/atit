@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Indicadores</title><!--Título de la página-->
+        <link rel="icon" href="logoacademia.jpeg" type="image/x-icon"><!--Icono del sitio web-->
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"><!--Librería para usar fuente de google-->
+        <style>
+            body{/*Asigna tipo de fuente a todo el documento*/
+            margin: 0;
+            padding: 0;
+            font-family: 'Questrial', sans-serif; 
+            font-size: 18px; 
+           }
+           .menu{/*Asigna tamaño, orden en los elementos, color de fondo, color de fuente y posición al menú*/
+            width: 100%;
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 1.125em;
+            top: 0;
+            left: 0;
+            color: rgb(19, 33, 188);
+            background-color: rgb(255, 255, 255);
+            z-index: 1000; /* Asegura que el menú esté encima del carrusel */
+            box-shadow: rgb(194, 194, 194) 0em 0.2em 0.4em;
+        }
+        .menu-items{/*Asigna margen y orden en los elementos del menu*/
+            margin: 1px;
+            margin-left: 2vw;
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+        .menu-items2{/*Asigna orden de los elemetos del menú*/
+            flex-direction: row;
+            margin: 1px;
+            display: flex;
+            margin-right: 3vw;
+            align-items: center;
+            font-size: 20px;
+        }
+        a{/*Asigna color a los enlaces*/
+            color: rgb(255, 119, 0);
+            text-decoration: none;
+            font-size: 0.93em;
+        }
+        a:hover{/*Asigna color a los enlaces cuando se seleccionan*/
+            color: rgb(193, 101, 20);
+            text-decoration: none;
+            font-weight: bold;
+            transition-duration: 0.3s;
+        }
+        .img3{/*Asigna tamaño a la imagen*/
+                width:20%;
+                height:20%;
+                border-radius: 0;
+                border: none;
+        }
+        section{/*Declarar margen interno de 3rem para la sección*/
+                padding: 3rem;
+            }
+            /* h1{/*Asigna al título principal alineado al centro con un tipo de tipografía, tamaño de letra y color
+                text-align: center;
+                font-size: 3rem;
+                color: #2b3185;
+                margin-top: 17vh;
+            } */
+            h2{/*Asigna al subtítulo con un tipo de tipografía y tamaño de letra*/
+                font-size: 1.5rem;
+            }
+            h3{/*Asigna al subtítulo un color*/
+                color: black;
+                font-size: 35px;
+                margin: 1rem;
+            }
+            .div4{/*Asigna margen, tamaño y orden a los elementos del div*/
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 17vh;
+        }
+        .div5{/*Asigna color y tamaño al div*/
+            background-color: orange;
+            height: 2.5vw;
+            width: 1.5vw;
+        }
+        .hr2{/*Elemento de decoración*/
+            margin-right:  6vw;
+            margin-left:  6vw;
+            margin-bottom: 6vh;
+            margin-top: 4vh;
+            color: white;
+            box-shadow: rgb(128, 128, 128) 0em 0.2em 0.7em;
+        }
+        footer{/*Asigna color, margen, tamaño y color de fuente al pie de página*/
+        background-color:  rgb(255, 153, 0);
+        padding: 1em;
+        color: white;
+        width: 100%;
+        margin-top: 2vh;
+       }
+       .palito{/*Elemento de decoración*/
+           font-size: 45px;    
+           color: rgb(255, 157, 0); 
+           margin-left: 1.8vw;
+        }
+        .palitoAzul{/*Elemento de decoración*/
+           font-size: 45px;    
+           color: rgb(0, 38, 255); 
+           margin-left: 4vw;
+        }
+        .container1{/*Asigna al contenedor tamaño, margen interno, y orden en sus elementos*/
+                width: 100%;
+                margin: 0;
+                padding: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .container2{/*Asigna al contenedor tamaño, tamaño máximo y orden en los elementos*/
+                max-width: 60%;
+                width: max-content;
+                text-align: center;
+                margin: 1rem;
+            }
+            .container3{/*Asigna al contenedor tamaño y orden en los elementos*/
+                width: 100%;
+                margin: 0;
+                padding: 1rem;
+                text-align: center;
+            }
+            section ul {/*Asigna a la lista ordenada un tipo de texto, alinea el texto al centro, da margen interno y externo*/
+                text-align: center;
+                list-style-type: none;
+                column-count: 2;
+                column-gap: 50px;
+                background-color: #ffffff;
+                padding: 10px;
+                border-radius: 1em;
+                margin: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="menu"><!--Contenedor del menú de la página-->
+            <div class="menu-items" style="font-size: 28px;"><img src="logo.png" class="img3"><strong>&emsp;ATIT academy</strong></div>
+            <div class="menu-items2">
+                <strong>
+                    <a href="../../index.html">Home</a>&emsp;&emsp;
+                    <a href="personal.html">Personal</a>&emsp;&emsp;
+                    <a href="proyectos.html">Proyectos</a>&emsp;&emsp;
+                    <a href="galeria.html">Galería</a>&emsp;&emsp;
+                    <a href="interaccion.html">Interacción</a>&emsp;&emsp;
+                    <a href="ayuda.html">Ayuda</a>
+                </strong>
+            </div>
+        </div>
+
+        <div class="div4" id="inicio"><!--Contenedor de diseño de título-->
+            <div class="div5" style="background-color: rgb(253, 244, 227);"></div>
+            <div class="div5" style="background-color: rgb(250, 219, 160);"></div>
+            <div class="div5" style="background-color: rgb(253, 204, 113);"></div>
+            <div class="div5" style="background-color: rgb(251, 176, 36);"></div>
+            <div class="div5" style="background-color: orange;"></div>&emsp;
+            <h1 class="h3" style="font-size: 40px;">Indicadores</h1>&emsp;
+            <div class="div5" style="background-color: orange;"></div>
+            <div class="div5" style="background-color: rgb(251, 176, 36);"></div>
+            <div class="div5" style="background-color: rgb(253, 204, 113);"></div>
+            <div class="div5" style="background-color: rgb(250, 219, 160);"></div>
+            <div class="div5" style="background-color: rgb(253, 244, 227);"></div>
+        </div>
+        <hr class="hr2" style="margin-right:  9vw; margin-left: 9vw;">
+        <section style="margin-top: -9vh;"><!--Sección de indicadores-->
+            <h3><span class="palitoAzul">&nbsp;| </span>Egresados: 605</h3>
+            <div class="container3"><!--Contenedor de egresados-->
+                <img src="egresados.jpeg" alt="egresados" width="400vw" height="auto">
+                <figcaption style="font-size: 20px; font-weight: bold;">Conferencia de egresados en ITI EXPERIENCE 3.0</figcaption>
+            </div><hr class="hr2">
+            <h3><span class="palito">&emsp;| </span>Casos de éxito</h3>
+            
+            <div class="container1"><!--Contenedor de casos de éxito-->
+                <div class="container2">
+                <img src="caso1.png" alt="caso1" width="400vw" height="auto">
+                </div>
+                <div class="container2">
+                <img src="caso2.png" alt="caso2" width="450vw" height="auto">
+                </div>
+            </div>
+            <div class="container3">
+                <img src="caso3.jpeg" alt="caso3" width="400vw" height="auto">
+                <figcaption style="font-size: 20px; font-weight: bold; line-height: 28px;">Profesor y estudiante de Ingeniería en Tecnologías de la<br> Información obtienen la tercera certificación de Unity 3D</figcaption>
+            </div>
+        </section>
+        <hr class="hr2" style="margin-top: -1vh; margin-right:  10vw; margin-left: 10vw;">
+
+        <div class="div4" style="margin-top: -3vh;"><!--Contenedor para diseño de título-->
+            <div class="div5" style="background-color: rgb(202, 202, 255);"></div>
+            <div class="div5" style="background-color: rgb(167, 167, 253);"></div>
+            <div class="div5" style="background-color: rgb(111, 111, 252);"></div>
+            <div class="div5" style="background-color: rgb(61, 61, 253);"></div>
+            <div class="div5" style="background-color: blue;"></div>&emsp;&emsp;
+            <h1 class="h3">Certificaciones</h1>&emsp;
+            <div class="div5" style="background-color: blue;"></div>
+            <div class="div5" style="background-color:rgb(61, 61, 253);"></div>
+            <div class="div5" style="background-color:  rgb(111, 111, 252);"></div>
+            <div class="div5" style="background-color:  rgb(167, 167, 253);"></div>
+            <div class="div5" style="background-color: rgb(202, 202, 255);"></div>
+        </div>
+        <section><!--Sección de certificaciones CIESS-->
+            <h3 style="margin-left: 6vw;"><span class="palito">| </span>Certificaciones CIEES</h3>
+            <div class="container1">
+                <div class="container2"><!--Contenedor certificaciones CIEES-->
+                <img src="CIESS.png" alt="CIEES" width="300vw" height="auto">
+                </div>
+                <div class="container2" style="line-height: 28px;">
+                    Los Comités Interinstitucionales para la Evaluación de la Educación Superior (CIEES) son el organismo dedicado al aseguramiento de la calidad de programas educativos e instituciones de educación superior. Impulsamos la calidad de las instituciones de educación superior a través de evaluaciones a sus programas educativos, así como sus funciones institucionales y otorgamos reconocimientos de acreditación.
+                </div>
+            </div>
+        </section><hr class="hr2" style="margin-right:  10vw; margin-left: 10vw;">
+        <section style="margin-top: -8vh;"><!--Sección de certificaciones-->
+            <h3 style="margin-left: 2vw;"><span class="palitoAzul">| </span>Certificaciones</h3><br>
+            <p style="line-height: 28px; margin-left: 6vw; margin-right: 6vw;">El PE de Ingeniería en Tecnologías de la Información promueve entre sus estudiantes diferentes certificaciones asociadas al ejercicio de esta profesión, entre las que destacan las siguientes: </p>
+            <ul style="line-height: 28px;  margin-left: 6vw; margin-right: 6vw;"><!--Lista de certificaciones de la carrera-->
+                <li>Microsoft Office Specialist (Word, Excel, PowerPoint, Access, Excel Experto)</li>
+                <li>Key English Test (KET) de Cambridge University</li>
+                <li>Preliminary English Test (PET) de Cambridge University</li>
+                <li>Fisrt Certificate in English (FCE) de Cambridge University</li>
+                <li>Adobe (Photoshop, Flash, Dreamweaver)</li>
+                <li>Certificación CCNA</li>
+                <li>Certificación CCENT 1</li>
+                <li>Certificación CCENT 2</li>
+                <li>Certificación A+</li>
+                <li>Certificación COMPTIA Strata</li>
+                <li>Certificación LINUX ESSENTIALS</li>
+                <li>HP ATA CONNECTED DEVICES</li>
+                <li>HP ATA NETWORKS</li>
+                <li>MTA Windows® Operating System Fundamentals</li>
+                <li>MTA Software Development Fundamentals (C#)</li>
+                <li>MTA Software Development Fundamentals (VB)</li>
+                <li>MTA Database Fundamentals</li>
+                <li>MTA Windows® Server Administration Fundamentals</li>
+                <li>MTA Networking Fundamentals</li>
+                <li>MTA Security Fundamentals</li>
+                <li>MTA Cloud Fundamentals</li>
+                <li>MTA HTML5 Application Development Fundamentals</li>
+                <li>MTA Introduction to Programming using JavaScript</li>
+                <li>MTA Introduction to Programming using HTML and CSS</li>
+                <li>MTA Introduction to Programming using Java</li>
+                <li>Oracle Java Standard Edition 5 and 6 Certified (Programación Orientada a Objetos)</li>
+                <li>Oracle Solaris 10 Certified (Sistemas Operativos)</li>
+                <li>Oracle Certified MySQL Developer (Base de Datos)</li>
+                <li>Unity User: Programmer</li>
+                <li>Unity User: VR Developer</li>
+                <li>ITS Cloud Computing</li>
+                <li>ITS Cybersecurity</li>
+                <li>ITS Databases</li>
+                <li>ITS HTML and CSS</li>
+                <li>ITS Java</li>
+                <li>ITS JavaScript</li>
+                <li>ITS Network Security</li>
+                <li>ITS Networking</li>
+                <li>ITS Python</li>
+                <li>CISCO CCST CYBERSECURITY</li>
+                <li>Fortinet NSE 1, 2, 3, 4, 5, 6</li>
+                <li>PMI Ready </li>
+            </ul>
+        </section>
+        <hr class="hr2" style="margin-right:  26vw; margin-left:  26vw; margin-top: -2vh; margin-bottom: 4vh;">
+        <footer><!--Pie de página-->
+            <p style="text-align: center; line-height: 30px;"><strong>Derechos de autor&copy; 2024. Todos los derechos reservados.</strong>
+            <br>Urbano Villalón num.500, Col. La Ladrillera, San Luis Potosí, S.L.P. México, C.P. 78363 </p>
+        </footer>
+        <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq3132ba5cb74a18b782ca86e17f6d700e1b6e9bf7a532b5df87cda8fab0532d1b" defer></script>
+
+    </body>
+</html>
