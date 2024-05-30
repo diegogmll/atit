@@ -355,16 +355,12 @@
         });
 
         function iti(){ //Función que devuelve una imagen en otra página con el plan de estudios ITI
-            var doc = new jsPDF();
-            var pdfContent = doc.output('datauristring');
             var nuevaVentana = window.open();
             nuevaVentana.document.write('<iframe width="100%" height="100%" src="planiti.jpg"></iframe>');
 
             return false;
         }
         function item(){ //Función que devuelve una imagen en otra página con el plan de estudios ITEM
-            var doc = new jsPDF();
-            var pdfContent = doc.output('datauristring');
             var nuevaVentana = window.open();
             nuevaVentana.document.write('<iframe width="100%" height="100%" src="planitem.jpg"></iframe>');
 
