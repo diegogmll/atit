@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal</title>
+        <link rel="icon" href="logoacademia.jpeg" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+        <style>
+            body{ /*Da estilo al cuerpo con un margen de 0*/
+            margin: 0;
+            padding: 0;
+            font-family: 'Questrial', sans-serif; 
+            font-size: 18px; 
+           }
+           .menu{ /*Da estilo al menu superior de la página*/
+            width: 100%;
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 1.125em;
+            top: 0;
+            left: 0;
+            color: rgb(19, 33, 188);
+            background-color: rgb(255, 255, 255);
+            z-index: 1000; /* Asegura que el menú esté encima del carrusel */
+            box-shadow: rgb(194, 194, 194) 0em 0.2em 0.4em;
+        }
+        .menu-items{ /*Da estilo a los elementos del menú superior*/
+            margin: 1px;
+            margin-left: 2vw;
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+        .menu-items2{ /*Da estilo a los elementos del menu superior*/
+            flex-direction: row;
+            margin: 1px;
+            display: flex;
+            margin-right: 3vw;
+            align-items: center;
+            font-size: 20px;
+        }
+        a{ /*Da estilo a los link de tipo <a>*/
+            color: rgb(255, 119, 0);
+            text-decoration: none;
+            font-size: 0.93em;
+        }
+        a:hover{
+            color: rgb(193, 101, 20);
+            text-decoration: none;
+            font-weight: bold;
+            transition-duration: 0.3s;
+        }
+            .container{/*Asigna al contenedor una tipografía, margen interno y externo, alinea el texto y da color de fondo*/
+                padding: 1rem;
+                padding-right: 1.2rem;
+                border-radius: 1rem;
+                margin: 3rem;
+                text-align: center;
+                padding-bottom: 7vh;
+                margin-top: 17vh;
+            }
+            .container2{/*Asigna al contenedor una tipografía, margen interno y externo, alinea el texto y da color de fondo*/
+                column-count: 3;
+                column-gap: 20px; 
+                background-color: #ffffff;
+                padding: .1rem;
+                padding-left: 1.5rem;
+                border-radius: 1rem;
+                margin: 3rem;
+                text-align: center;
+                margin-bottom: 14vh;
+            }
+            div ul {/*Asigna a la lista ordenada un tipo de texto, alinea el texto al centro, da margen interno y externo*/
+                text-align: center;
+                list-style-type: none;
+                background-color: #ffffff;
+                padding: 10px;
+                border-radius: 1em;
+                margin: 1em;
+            }
+            h2{/*Asigna al subtítulo color, tamaño y margen externo*/
+                color: #001eff;
+                font-size: 1.5rem;
+                margin: 1rem;
+            }
+            .h3{
+                /* color: #ffffff; */
+                color: black;
+                font-size: 40px;
+                margin: 1rem;
+            }
+            img{/*Asigna a la imagen borde circular con color, y tamaño*/
+                border-radius: 5rem;
+                width: 7rem;
+                height: auto;
+                border: #2b3185 solid .4rem;
+            }
+            .img2{/*Asigna a la imagen borde de color*/
+                border: #ff8800 solid .4rem;
+            }
+            .container3{/*Asigna al contenedor margen externo, tamaño, borde y tipografía*/
+                margin: 2rem;
+                width: 6rem;
+                height: auto;
+                border-color: #f9d99a;
+                margin-left: 4vw;
+                margin-right: 4vw;
+                display: flex;
+                justify-content: center;
+               align-items: center;
+               margin-top: 6vh;
+               margin-bottom: 0;
+            }
+            .resaltar{/*Asigna al texto color y lo alinea al centro*/
+                text-align: center;
+                color: #09053c;
+                font-weight: bold;
+            }
+            .container4{/*Asigna al contenedor orden en sus elementos*/
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .parrafo{/*Asigna al parrafo color de texto, y quita margenes*/
+                padding: 0;
+                margin: 0;
+                color: #686767;
+            }
+            .img3{
+                width:20%;
+                height:20%;
+                border-radius: 0;
+                border: none;
+            }
+            .div4{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .div5{
+            background-color: orange;
+            height: 2.5vw;
+            width: 1.5vw;
+        }
+        .hr2{
+            margin-right:  6vw;
+            margin-left:  6vw;
+            margin-top: -6vh;
+            margin-bottom: 6vh;
+            color: white;
+            box-shadow: rgb(128, 128, 128) 0em 0.2em 0.7em;
+        }
+        footer{
+        background-color:  rgb(255, 153, 0);
+        padding: 1em;
+        color: white;
+        width: 100%;
+        margin-top: 2vh;
+       }
+        </style>
+    </head>
+    <body>
+        <script>
+            function mireles() {/*Función para mostrar la información y video del profesor Miréles*/
+                document.getElementById("demo").innerHTML="<p>Estudió Ingeniería en Electrónica (Facultad de Ciencias de la UASLP) y la Maestría en Ciencias de la Computación (CICESE en Baja California). Ingreso a la universidad en Enero del 2006 como profesor asignatura y en Agosto del 2012 como profesor de tiempo completo por proyecto. Sus áreas de especialidad son: la Programación, el manejo de Sistemas Operativos, los Métodos Numéricos, los Sistemas Embebidos, el Internet de las Cosas, los Gráficos por Computadora utilizando UNITY® y el Desarrollo de Video Juegos. A desarrollado proyectos en colaboración con: COPOCyT, APEX Racing Simulators y la UASLP. Certificaciones obtenidas: Microsoft Office Word 2003, Microsoft Office Excel 2003, Microsoft Office Power Point 2003, Microsoft Office Access 2003, Microsoft Office Word Expert , Microsoft Office Excel Expert, Microsoft Office Specialist Master  Instructor, Microsoft Office Word 2007, Microsoft Office Excel 2007, Microsoft Office Power Point 2007, Microsoft Office Access 2007, Microsoft Office Outlook 2007, Adobe Flash CS3 y CS4, Adobe Dreamweaver CS3 y CS4, Certificación en Lenguaje de Programación Java, Certificación del Sistema Operativo Solaris 10 y Certificación en Desarrollo de Videojuegos con Unity. Actualmente administra la Academia ORACLE de la Universidad Politécnica de San Luis Potosí, para facilitar a nuestros estudiantes los programas de certificación de Java, Solaris y MySQL como una herramienta que permita fortalecer su conocimiento, mejorar sus habilidades y facilitar su inserción en el mercado laboral. Administra también el Programa Universitario de Freescale o NXP, proporcionando una amplia variedad de oportunidades a estudiantes y maestros, ofreciéndoles equipos de desarrollo de hardware/software para su uso en clases, colaborando en proyectos de investigación y brindando oportunidades de empleo a estudiantes. Como parte del programa, se está trabajando con los alumnos para participar en la competencia nacional Freescale CUP de carros autónomos. Participa con COPOCyT en un Proyecto de divulgación cuyo objetivo es promover procesos de apropiación social del conocimiento y el desarrollo de proyectos participativos de difusión y divulgación de la ciencia, tecnología e innovación, de interés público con cobertura en zonas marginadas, rurales o de difícil acceso.  Participa en el proyecto del Cuerpo Académico, “Desarrollo de la Plataforma tecnológica para el sensado, procesamiento, almacenamiento e interpretación de señales generadas por el cuerpo humano para el apoyo a la prevención de enfermedades crónico degenerativas”. Participa en el proyecto con la empresa APEX Racing Simulators, en el desarrollo de simuladores utilizando la plataforma de Unity y el hardware Oculus Rift. Y colabora con la Facultad de Ciencias de la UASLP, en el desarrollo de proyectos relacionados con Drones.</p><video src='videomir.mp4' width='400rem' height='auto' autoplay controls muted playsinline></video>";
+
+            }
+            function montano(){/*Función para mostrar la información del profesor Montaño*/
+                document.getElementById("demo").innerHTML="El Doctor Omar Montaño Rivas es Ingeniero Electrónico (UASLP, 2001). Tiene una maestría en Sistemas Inteligentes (ITESM, 2003) y es Doctor en Filosofía (PhD) (University of Edinburgh, 2012). Ingresó a la UPSLP en 2003. Actualmente es Profesor –  Investigador Nivel “B”, ostenta el perfil PRODEP  desde el 2015 y es miembro del Cuerpo Académico «Tecnologías de la Información y Telecomunicaciones para el Desarrollo y la Competitividad». Cuenta con diversas certificaciones del área de tecnologías de la información como Java, Redes, Unity 3D, LabVIEW, Bases de Datos, entre otras. Cuenta con 15 años de experiencia como docente en educación superior y con diversas publicaciones científicas a nivel internacional en el área de la informática. Ha participado como expositor en importantes congresos científicos en países como como Reino Unido, Alemania, Austria y México.";
+            }
+            function llamas(){/*Función para mostrar la informacón del profesor Llamas*/
+                document.getElementById("demo").innerHTML="Es Ingeniero en Sistemas Computacionales por el Instituto Tecnológico de San Luis Potosí. Es Maestro en Ciencias de la computación por el Centro de Investigación Científica y de Educación Superior de Ensenada – CICESE. Del 2002 a la fecha se desempeña como Profesor de Tiempo Completo en la Universidad Politécnica de San Luis Potosí, dentro de la Academia de Tecnologías de la Información y Telemática. Pertenece al cuerpo académico “Tecnologías de la Información y comunicación para el desarrollo y la Competitividad”. Sus áreas de investigación giran en torno a la seguridad informática y el cómputo ubicuo. Ha impartido diversas pláticas relacionadas con aspectos de concientización sobre la seguridad de la información a diversas instituciones públicas, así como en instituciones educativas  públicas y privadas. Es Coordinador  de la Unidad de Delitos Informáticos dentro de la Universidad Politécnica de San Luis Potosí. Actualmente trabaja en conjunto con la secretaría de seguridad pública en un par de proyectos relacionados con las áreas del computo forense y computo móvil.";
+            }
+            function liliana(){/*Función para mostrar la información y video de la maestra Liliana*/
+                document.getElementById("demo").innerHTML="<p>La Maestra Liliana Gámez Zavala es Ingeniero en Informática (UASLP). Tiene una Maestría en Tecnologías de la Información (UNID). Ingresó a la UPSLP en el 2008. Actualmente es profesor con asignación de Proyecto y es parte del grupo ITQ para Cisco a Nivel Nacional e Internacional. Es auditor certificado para ISO 9001 y ha sido acreditado en diferentes certificaciones del área de TI como CCNA (Cisco Certified Networking Associate), CCENT (Cisco Certified Entry Networking Technician), MTA (Microsoft Technology Associate), MOS (Microsoft Office Specialist), HP, COMTPIA A+, entre otras. Cuenta con la preparación para el uso de software básico y especializado, que van desde el diseño hasta sistemas ERP avanzados como SAP B1; así como software y herramientas para el desarrollo en ambientes de escritorio y Web. Cuenta con casi 18 años de experiencia como profesional laborando para empresas de diferentes giros en el área de Tecnologías de Información, y con 16 años de experiencia en la docencia a nivel bachillerato, licenciatura y posgrado. Sus áreas de interés están relacionadas estrechamente con la tecnología informática, redes y seguridad. Ha participado en diversas ponencias a nivel nacional e internacional para Latinoamérica y el Caribe relacionadas con el programa Cisco Networking Academy Program; ha publicado artículos a nivel nacional. Obtuvo premios, reconocimientos y distinciones a lo largo de su trayectoria educativa y profesional, principalmente en la UVM, destacándola como uno de los mejores empleados y profesionistas en el área de TI, logrando el lince de oro, que es la máxima presea que se les otorga a los colaboradores más destacados en esta empresa para la que laboró durante 9 años. También obtuvo el reconocimiento como ITQ, Instructor Trainner Qualification, a nivel Latinoamérica y el caribe, que le permite formar a nuevos profesores en diferentes áreas de TI dentro del programa CNAP (Cisco Networking Academy Program). Se ha comprometido en la preparación de estudiantes para la participación en los concursos de NETRIDERS, obteniendo lugares importantes a nivel México, y dentro de los 10 mejores a nivel Latinoamérica y el Caribe, en sus diferentes emisiones desde el 2010. Ha participado en diferentes foros presenciales y en línea del programa Cisco Networking Academy a nivel Local, Nacional e Internacional; compartiendo estrategias de enseñanza y mejores prácticas; recibiendo reconocimientos a la excelencia académica y al compromiso con el programa durante más de 10 años.</p><video src='videolili.mp4' width='400rem' height='auto' autoplay controls muted playsinline></video>"
+            }
+            function ordaz(){/*Función para mostrar la información del profesor Ordaz*/
+                document.getElementById("demo").innerHTML="Desarrollo de laboratorio de programación aplicada, aplicación del uso de nuevas tecnologías en la enseñanza de la programación en 2009. Coordinador del proyecto “Proyecto de prestación de servicios para el diagnóstico, la formación y evaluación con fines de certificación, de actores educativos y líderes de capacitación en el estándar de competencia EC0121 “elaboración de proyectos de aprendizaje integrando el uso de las tecnologías de la información y comunicación”, así como la capacitación de administradores” para la SEGE, logrando la capacitación de 2455 profesores de educación básica, 71 líderes y 8 administradores, se implementó el Centro Certificador de Competencias de CONOCER; proyecto que inició en 2011 y concluyo en 2015. Coordinador del proyecto “Proyecto de prestación de servicios para el seguimiento, intervención y evaluación a las escuelas incorporadas al programa habilidades digitales para todos en el componente tecnológico y de operación”. Se trabajó en colaboración con la Universidad Autónoma de San Luis Potosí, El Tecnológico de Ciudad Valles, La Universidad Intercultural Campus Matlapa, El Tecnológico de Superior de Rioverde y El Tecnológico Superior de Tamazunchale para lograr dar cobertura a 187 escuelas del estado en diversos municipios de San Luis Potosí y proporcionar mantenimiento y conectividad a las aulas Telemáticas de la primera etapa del proyecto HDT. Se logró la traducción de los paquetes principales de las computadoras XO a lengua Tének y Nahuatl, se avanzó en un 50% para Pame Norte. Se atendieron 10 escuelas de educación indígena en el marco del Scrath Day mundial en 2012 y 2013, uso de las tecnologías en educación básica y aprovechamiento de las computadoras XO. 2011-2015. Líder de proyecto en la UPSLP para el proyecto “Innovación de un prototipo mecatrónico para empaque usando tecnologías de levitación magnética con control automático” en colaboración con IPICyT en 2012. Líder del proyecto “PRIMER ENCUENTRO SOBRE TECNOLOGÍAS DE LA INFORMACIÓN Y COMUNICACIÓN EN EDUCACIÓN INDÍGENA” desarrollado para la Subsecretaria de de Educación Indígena, el Departamento de Educación Indígena, Bilingüe e Intercultural de la Secretaria de Educación de Gobierno del Estado y la Secretaria de Educación de Nayarit. Talleres y conferencias relacionadas con las TI y el aprovechamiento de las XO en el aula, se desarrollaron planeaciones didácticas para integrar el uso de las XO en el aula. Septiembre – Noviembre de 2012. Colaboración en el proyecto “Desarrollo de la Plataforma tecnológica para el sensado, procesamiento, almacenamiento e interpretación de señales generadas por el cuerpo humano para el apoyo a la prevención de enfermedades crónico degenerativas”. 2015.";
+            }
+            function coordinador(){/*Función para mostrar la información del coordinador de la academia*/
+                document.getElementById("demo").innerHTML="Egresado de la primera generación de la maestría en Ciencias de la Computación. Actualmente labora en la Universidad Politécnica de San Luis Potosí como profesor investigador, y como coordinador de las carreras de Ingeniería en Tecnologías de la Información e Ingeiería en Telemática.";
+            }
+        </script>
+        <div class="menu">
+            <div class="menu-items" style="font-size: 28px;"><img src="logo.png" class="img3"><strong>&emsp;ATIT academy</strong></div>
+            <div class="menu-items2">
+                <strong>
+                    <a href="../../index.html">Home</a>&emsp;&emsp;
+                    <a href="proyectos.html">Proyectos</a>&emsp;&emsp;
+                    <a href="galeria.html">Galería</a>&emsp;&emsp;
+                    <a href="indicadores.html">Indicadores</a>&emsp;&emsp;
+                    <a href="interaccion.html">Interacción</a>&emsp;&emsp;
+                    <a href="ayuda.html">Ayuda</a>
+                </strong>
+            </div>
+        </div>
+        <div class="container"><!--Contenedor para líderes-->
+            <div class="div4">
+                <div class="div5" style="background-color: rgb(253, 244, 227);"></div>
+                <div class="div5" style="background-color: rgb(250, 219, 160);"></div>
+                <div class="div5" style="background-color: rgb(253, 204, 113);"></div>
+                <div class="div5" style="background-color: rgb(251, 176, 36);"></div>
+                <div class="div5" style="background-color: orange;"></div>&emsp;
+                <h1 class="h3">Personal</h1>&emsp;
+                <div class="div5" style="background-color: orange;"></div>
+                <div class="div5" style="background-color: rgb(251, 176, 36);"></div>
+                <div class="div5" style="background-color: rgb(253, 204, 113);"></div>
+                <div class="div5" style="background-color: rgb(250, 219, 160);"></div>
+                <div class="div5" style="background-color: rgb(253, 244, 227);"></div>
+
+            </div>
+            
+            <div class="container4">
+            <div class="container3""><!--Contenedor para cada lider-->
+                <center>
+                <img src="antoniocabrico.jpeg" onclick="coordinador()" style="cursor: pointer;"><!--Llama a la función mediante click en la imagen-->
+                <p class="resaltar">COORDINADOR</p>
+                <p>Cabrera Rico Juan Antonio</p>
+                </center>
+            </div>
+            <div class="container3">
+                <center>
+                <img class="img2" src="mireles.jpeg" onclick="mireles()" style="cursor: pointer;"><!--Llama a la función mediante click en la imagen-->
+                <p class="resaltar">VIDEOJUEGOS, RA, RV Y MIXTA</p>
+                <p>Fernández Mireles Víctor Manuel</p>
+                </center>
+            </div>
+            <div class="container3">
+                <center>
+                <img src="liliana.jpeg" onclick="liliana()" style="cursor: pointer;"><!--Llama a la función mediante click en la imagen-->
+                <p class="resaltar">CISCO, PROGRAMACIÓN, CERTIFICACIONES ESPECIALIZADAS, CERTIPORT, COMPTIA, OPENEDG</p>
+                <p>Gámez Zavala Liliana</p>
+                </center>
+            </div>
+            <div class="container3">
+                <center>
+                <img class="img2" src="icono.jpeg" onclick="llamas()" style="cursor: pointer;"><!--Llama a la función mediante click en la imagen-->
+                <p class="resaltar">UNIDAD DE DELITOS INFORMÁTICOS, FORTINET, ECOUNCIL</p>
+                <p>Llamas Contreras Rafael</p>
+                </center>
+            </div>
+            <div class="container3">
+                <center>
+                <img src="icono.jpeg" onclick="montano()" style="cursor: pointer;"><!--Llama a la función mediante click en la imagen-->
+                <p class="resaltar">RESIDENCIAS PROFESIONALES, AWS</p>
+                <p>Montaño Rivas Omar</p>
+                </center>
+            </div>
+            <div class="container3">
+                <center>
+                <img class="img2" src="ordazsalazar.jpeg" onclick="ordaz()" style="cursor: pointer;"><!--Llama a la función mediante click en la imagen-->
+                <p class="resaltar">INDUSTRIA 4.0, DEVOPS</p>
+                <p>Ordaz Salazar Francisco Cruz</p>
+                </center>
+            </div>
+            </div>
+            <p class="parrafo" id="demo" style="line-height: 30px; margin-top: 6vh;"></p><!--Párrafo para mostrar la información de los líderes-->
+        </div><hr class="hr2">
+        <div class="div4">
+            <div class="div5" style="background-color: rgb(202, 202, 255);"></div>
+            <div class="div5" style="background-color: rgb(167, 167, 253);"></div>
+            <div class="div5" style="background-color: rgb(111, 111, 252);"></div>
+            <div class="div5" style="background-color: rgb(61, 61, 253);"></div>
+            <div class="div5" style="background-color: blue;"></div>&emsp;&emsp;
+            <h1 class="h3">Docentes</h1>&emsp;
+            <div class="div5" style="background-color: blue;"></div>
+            <div class="div5" style="background-color:rgb(61, 61, 253);"></div>
+            <div class="div5" style="background-color:  rgb(111, 111, 252);"></div>
+            <div class="div5" style="background-color:  rgb(167, 167, 253);"></div>
+            <div class="div5" style="background-color: rgb(202, 202, 255);"></div>
+
+        </div>
+        <div class="container2"><!--Contenedor de profesores-->
+            
+            <ul style="line-height: 28px;"><!--Lista de docentes-->
+                <li>Aguilar Rodríguez Araceli Gabriela</li>
+                <li>Alonso Álvarez María Alicia</li>
+                <li>Alonso Ruiz Ma. De Jesús</li>
+                <li>Arriaga Santos Carlos Adrián</li>
+                <li>Banda  Guzmán Víctor Miguel</li>
+                <li>Bautista Bautista Italo Carlos Delfino</li>
+                <li>Cabrera Salinas Dinorah</li>
+                <li>Cerda Lugo Angel de Jesus</li>
+                <li>Chávez Pérez Manuel</li>
+                <li>De León Lomelí Luz Roxana</li>
+                <li>Díaz Díaz Irwin Allen</li>
+                <li>Flores Gutiérrez Claudia Patricia</li>
+                <li>García Haro Guillermo</li>
+                <li>González Salas Javier Salvador</li>
+                <li>González Torres Jorge Isaac</li>
+                <li>Grimaldo Martínez Ana Isabel</li>
+                <li>Guerrero Castillo Israel</li>
+                <li>Hernández  Delgado Zaira Elizabeth</li>
+                <li>Hernández Escobar Erika Nohemí</li>
+                <li>Hernández Martínez Imelda Deyanira</li>
+                <li>Herrera Herrera Roxana Georgina</li>
+                <li>Islas González María De Guadalupe</li>
+                <li>Jerónimo Moreno Yasser </li>
+                <li>Ledesma Ramos Guadalupe</li>
+                <li>Leija Martínez Nehemías</li>
+                <li>López Quirino David Uriel</li>
+                <li>Martínez Galla Baltazar</li>
+                <li>Martínez Martínez Leopoldo José Alfredo</li>
+                <li>Martínez Mendoza Víctor Gabriel</li>
+                <li>Méndez Leal Jorge Martín</li>
+                <li>Moncada González Héctor Raúl</li>
+                <li>Montañez Medina Adolfo Antonio</li>
+                <li>Morales Robles Fermín</li>
+                <li>Niño Carrales Genaro</li>
+                <li>Pérez Castillo Paulina Del Rosario</li>
+                <li>Ramírez González María Guadalupe</li>
+                <li>Ramírez López Marisol</li>
+                <li>Reyes  Alejandro</li>
+                <li>Reyes Velázquez Eduardo Alberto</li>
+                <li>Reyna López Catalina</li>
+                <li>Robles Centeno Laura Virginia</li>
+                <li>Ruiz Cigarrillo Oscar</li>
+                <li>Sánchez  Vásquez José Daniel</li>
+                <li>Sandoval Ortiz Andrés</li>
+                <li>Silva Rodríguez Genoveva Viridiana</li>
+                <li>Tolentino Jiménez José Ramón</li>
+                <li>Trejo Martínez Francisco Eduardo</li>
+                <li>Vargas Olmos Cecilia</li>
+                <li>Velázquez Durán Miguel De Jesús</li>
+                <li>Zúñiga Hernández Erika Adriana</li>
+            </ul>
+        </div>
+        <hr class="hr2" style="margin-right:  26vw; margin-left:  26vw;">
+        <footer>
+            <p style="text-align: center; line-height: 30px;"><strong>Derechos de autor&copy; 2024. Todos los derechos reservados.</strong>
+            <br>Urbano Villalón num.500, Col. La Ladrillera, San Luis Potosí, S.L.P. México, C.P. 78363 </p>
+        </footer>
+        <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq3132ba5cb74a18b782ca86e17f6d700e1b6e9bf7a532b5df87cda8fab0532d1b" defer></script>
+    </body>
+</html>

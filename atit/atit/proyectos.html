@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyectos</title>
+        <link rel="icon" href="logoacademia.jpeg" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+        <style>
+            body{ /*Da estilo al cuerpo con un margen de 0*/
+            margin: 0;
+            padding: 0;
+            font-family: 'Questrial', sans-serif; 
+            font-size: 18px; 
+           }
+           .menu{ /*Da estilo al menu superior de la página*/
+            width: 100%;
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 1.125em;
+            top: 0;
+            left: 0;
+            color: rgb(19, 33, 188);
+            background-color: rgb(255, 255, 255);
+            z-index: 1000; /* Asegura que el menú esté encima del carrusel */
+            box-shadow: rgb(194, 194, 194) 0em 0.2em 0.4em;
+        }
+        .menu-items{ /*Da estilo a los elementos del menú superior*/
+            margin: 1px;
+            margin-left: 2vw;
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+        .menu-items2{ /*Da estilo a los elementos del menu superior*/
+            flex-direction: row;
+            margin: 1px;
+            display: flex;
+            margin-right: 3vw;
+            align-items: center;
+            font-size: 20px;
+        }
+        a{  /*Da estilo a los link de tipo <a>*/
+            color: rgb(255, 119, 0);
+            text-decoration: none;
+            font-size: 0.93em;
+        }
+        a:hover{
+            color: rgb(193, 101, 20);
+            text-decoration: none;
+            font-weight: bold;
+            transition-duration: 0.3s;
+        }
+        .img3{ /*Da estilo a la imagen del menú superior*/
+                width:20%;
+                height:20%;
+                border-radius: 0;
+                border: none;
+            }
+            section{/*Declarar margen interno de 3rem para la sección*/
+                padding: 3rem;
+            }
+            /* h1{/*Asigna al título principal alineado al centro con un tipo de tipografía, tamaño de letra y color
+                text-align: center;
+                font-size: 3rem;
+                color: #2b3185;
+                margin-top: 17vh;
+            } */
+            h2{/*Asigna al subtítulo con un tipo de tipografía y tamaño de letra*/
+                font-size: 1.5rem;
+            }
+            h3{/*Asigna al subtítulo un color*/
+                color: black;
+                font-size: 40px;
+                margin: 1rem;
+            }
+            .containerbot{/*Alinea los botones al centro*/
+                text-align: center;
+                margin-top: 2vh;
+            }
+            button{/*Asigna a los botones color, tipografía, forma, borde, margen interno y margen externo*/
+                border: none;
+                border-radius: 3rem;
+                padding: .5rem;
+                padding-left: .9rem;
+                padding-right: .9rem;
+                background-color: #f89d36;
+                color: #ffff;
+                font-size: 1rem;
+                margin-inline-end: 1rem;
+                margin-inline-start: 1rem;
+                margin-bottom: .5rem;
+            }
+            button:hover{/*Asigna la apariencia de los botones al ser seleccionados*/
+                background-color: #c7c7c7;
+                font-size: large;
+            }
+            .container1{/*Asigna al contenedor margen externo y tipografía*/
+                margin: 3rem;
+               margin-top: -9vh;
+            }
+            .container2{/*Asigna al contenedor margen externo, margen interno, tipografía, y alínea el texto a la derecha*/
+                margin: 3rem;
+                margin-bottom: 0vh;
+                padding: 1rem;
+                text-align: left;
+                
+            }
+            .responsable{/*Asigna color de fuente para los responsables de los proyectos*/
+                color: #f89d36;
+            }
+            .containerdiv{/*Asigna tamaño al contenedor*/
+                width: 100%;
+                height: auto;
+            }
+            ul li{/*Quita el tipo de lista a la lista ordenada*/
+                list-style-type: none;
+            }
+            .boton2{/*Alinea el botón a la derecha de la página*/
+                text-align: left;
+                margin-left: 3.5vw;
+            }
+            button a{/*Asigna color y quita decoración a los links de los botones*/
+                text-decoration: none;
+                color: inherit;
+                font: inherit;
+            }
+            button a:visited{/*Asigna color a la letra de los botones*/
+            color: inherit;
+            }
+            .div4{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 17vh;
+        }
+        .div5{
+            background-color: orange;
+            height: 2.5vw;
+            width: 1.5vw;
+        }
+        .hr2{
+            margin-right:  6vw;
+            margin-left:  6vw;
+            margin-bottom: 6vh;
+            margin-top: 4vh;
+            color: white;
+            box-shadow: rgb(128, 128, 128) 0em 0.2em 0.7em;
+        }
+        footer{
+        background-color:  rgb(255, 153, 0);
+        padding: 1em;
+        color: white;
+        width: 100%;
+        margin-top: 2vh;
+       }
+       .palito{
+           font-size: 45px;    
+           color: rgb(255, 157, 0); 
+           margin-left: 1.8vw;
+        }
+        .palitoAzul{
+           font-size: 45px;    
+           color: rgb(0, 38, 255); 
+           margin-left: 4vw;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="menu">
+            <div class="menu-items" style="font-size: 28px;"><img src="logo.png" class="img3"><strong>&emsp;ATIT academy</strong></div>
+            <div class="menu-items2">
+                <strong>
+                    <a href="../../index.html">Home</a>&emsp;&emsp;
+                    <a href="personal.html">Personal</a>&emsp;&emsp;
+                    <a href="galeria.html">Galería</a>&emsp;&emsp;
+                    <a href="indicadores.html">Indicadores</a>&emsp;&emsp;
+                    <a href="interaccion.html">Interacción</a>&emsp;&emsp;
+                    <a href="ayuda.html">Ayuda</a>
+                </strong>
+            </div>
+        </div>
+        <div class="div4" id="inicio">
+            <div class="div5" style="background-color: rgb(253, 244, 227);"></div>
+            <div class="div5" style="background-color: rgb(250, 219, 160);"></div>
+            <div class="div5" style="background-color: rgb(253, 204, 113);"></div>
+            <div class="div5" style="background-color: rgb(251, 176, 36);"></div>
+            <div class="div5" style="background-color: orange;"></div>&emsp;
+            <h1 class="h3" style="font-size: 40px;">Proyectos</h1>&emsp;
+            <div class="div5" style="background-color: orange;"></div>
+            <div class="div5" style="background-color: rgb(251, 176, 36);"></div>
+            <div class="div5" style="background-color: rgb(253, 204, 113);"></div>
+            <div class="div5" style="background-color: rgb(250, 219, 160);"></div>
+            <div class="div5" style="background-color: rgb(253, 244, 227);"></div>
+
+        </div>
+        
+        <div class="containerbot"><!--Contenedor que alinea botones al centro-->
+            <button><a href="#proyectos">PROYECTOS DE INVESTIGACIÓN</a></button><!--Botón que dirige a los proyectos de investigación-->
+            <button><a href="#presidencias">PROYECTOS DE RESIDENCIAS</a></button><!--Botón que dirige a los proyectos de residencias-->
+            <button><a href="#residencias">RESIDENCIAS</a></button><!--Botón que dirige a la información de residencias-->
+        </div>
+        <hr class="hr2">
+        <section id="proyectos" style="line-height: 30px;"><!--Sección de proyectos-->
+        <div class="container1">
+            <h3 style="margin-bottom: 4vh;"><span class="palito">| </span>&nbsp;Proyectos de investigación activos</h3>
+                <div class="containerdiv">
+                <ul><!--Lista de proyectos de investigación-->
+                    <li>Análisis de PDFs maliciosos<p class="responsable">Responsable: M.C. Hugo F. González Robledo</p></li>
+                    <li>traducción de Sugar a Tenek<p class="responsable">Responsable: M.C. Hugo F. González Robledo</p></li>
+                    <li>Plataforma de gestión de objetos de aprendizaje (Parte del proyecto "Disminución del rezago educativo a través de servicios digitales en comunidades remotas y de alta marginación de la micro región Centro-Sur de San Luis Potosí")<p class="responsable">Responsable: M.C. Hugo F. González Robledo</p><p class="responsable">Financiamiento: FORDECYT</p></li>
+                    <li>Revisión de seguridad en aplicaciones web y servicios web<p class="responsable">Responsable: M.C. Hugo F. González Robledo</p></li>
+                    <li>Aplicaciones de Técnicas Forences a firmware de móviles<p class="responsable">Responsable: M.C. Hugo F. González Robledo</p></li>
+                    <li>Simulación de antenas para captación de energía solar<p class="responsable">Responsable: Dr. Jorge Simón Rodríguez</p></li>
+                    <li>Simulación de antenas multibanda para dispositivos móviles<p class="responsable">Responsable: Dr. Jorge Simón Rodríguez</p></li>
+                    <li>Diseño de una cára aneonica<p class="responsable">Responsable: Dr. Jorge Simón Rodríguez</p></li>
+                    <li>Superficies Interactivas como apoyo a los Procesos de Innovación (SIPI)<p class="responsable">Responsable: Dr. Eduardo H. Calvillo Gámez</p><p class="responsable">Financiamiento: CUDI-CONACYT</p></li>
+                    <li>El Rol de los Dispositivos de Entrada en la Toma de Decisiones<p class="responsable">Responsable: Dr. Eduardo H. Calvillo Gámez</p><p class="responsable">Financiamiento: SEP-PROMEP</p</li>
+                    <li>Experiencia de Usuarios en Videojuegos<p class="responsable">Responsable: Dr. Eduardo H. Calvillo Gámez</p></li>
+                </ul>
+                </div>
+        </div><hr class="hr2">
+        <div class="container2"  style="line-height: 30px;">
+            <h3 style="margin-bottom: 4vh; margin-top: -3vh;"><span class="palito">| </span>&nbsp;Proyectos de investigación terminados</h3>
+            <div>
+                <ul>
+                    <li>Evaluación Remota de Sistemas Móviles y Ubicuos para el Cuidado de la Salud<p class="responsable">Responsable: Dr. Eduardo H. Calvillo Gámez</p><p class="responsable">Financiamiento: CUDI-CONACYT</p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="boton2"><!--Contenedor que alinea el botón a la derecha-->
+        <button><a href="#inicio">REGRESAR</a></button><!--Botón que regresa al inicio de la página-->
+        </div>
+        </section>
+        <hr class="hr2" style="margin-top: -2vh; margin-left: 9vw; margin-right: 9vw;">
+        <section id="presidencias" ><!--Sección de proyectos de residencias profesionales-->
+            <div class="container1">
+                <h3 style="margin-bottom: 4vh;"><span class="palito">| </span>&nbsp;Proyectos de residencia profesional terminados</h3>
+                <div class="containerdiv"  style="line-height: 30px;">
+                    <ul><!--Lista de proyectos de residencias profesionales-->
+                        <li>Portal de Recursos Humanos<p class="responsable">Elaborado por Juan Ángel Castillo González</p><p class="responsable">Empresa: IPSE Software Factory S.A de C.V</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>Portal Turístico<p class="responsable">Elaborado por Ignacio Martínez Fortanel</p><p class="responsable">Empresa: IPSE Software Factory S.A de C.V</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>Portal Turístico<p class="responsable">Elaborado por Luz Adriana Morales Aguilera</p><p class="responsable">Empresa: IPSE Software Factory S.A de C.V</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>Implementación y desarrollo del área de informática<p class="responsable">Elaborado por Octavio Alejandro Gómez Domínguez</p><p class="responsable">Empresa: IEEA</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>Sistema de administración de Recursos Humanos<p class="responsable">Elaborado por Salvador Antonio Rodríguez Aguilar</p><p class="responsable">Empresa: IPSE Software Factory S.A de C.V</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>Sistema informático de la Secretaria de Comunicaciones y Transportes de San Luis Potosí<p class="responsable">Elaborado por Miguel Ángel Mota Martínez</p><p class="responsable">Empresa: GN SOFTWARE</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>Hawaiian Paradise Administrativo<p class="responsable">Elaborado por Sergio Alejandro Sustaita Martínez</p><p class="responsable">Empresa: IPSE Software Factory S.A de C.V</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>Sistema informático de la Secretaría de Comunicaciones y Transportes de San Luis Potosí<p class="responsable">Elaborado por José Luis Cortés López</p><p class="responsable">Empresa: Sistemas Administrativos NEOCEN</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>NEOCEN Sistemas Hawaiian Paradise. Modulo ventas<p class="responsable">Elaborado por Erik Rosalino Martínez</p><p class="responsable">Empresa: GN SOFTWARE</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>NEOCEN Tallas<p class="responsable">Elaborado por Karla Ivette Díaz de León Azuara</p><p class="responsable">Empresa: Sistemas Administrativos NEOCEN</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>Sistemas de control y seguimiento de expediantes jurídicos<p class="responsable">Elaborado por Sergio Alfredo Puente Villanueva</p><p class="responsable">Empresa: GN SOFTWARE</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>Desarrollo del modulo NEOCEN-NET<p class="responsable">Elaborado por Janeth García Saucedo</p><p class="responsable">Empresa: Sistemas Administrativos NEOCEN</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>Automatización de procesos de: inventarios, nóminas, manejos de información, atención a clientes y comunicación entre los departamentos<p class="responsable">Elaborado por Víctor Alfonso Espinoza Díaz</p><p class="responsable">Empresa: Sistemas Administrativos NEOCEN</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>Automatización de procesos de: inventarios, nóminas, manejos de información, atención a clientes y comunicación entre los departamentos<p class="responsable">Elaborado por Claudia Pescina Ortíz</p><p class="responsable">Empresa: IPSE Software Factory S.A de C.V</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>Desarrollo de software educativo<p class="responsable">Elaborado por Carlos Alberto López Posadas</p><p class="responsable">Empresa: Sistemas Administrativos NEOCEN/p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>Reestructuración de la administración de usuarios de los asuntos que llegan mediante oficios impresos en la Auditoría Superior<p class="responsable">Elaborado por Verónica Jacobo Sánchez</p><p class="responsable">Empresa: TELEM</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>Reestructuración de la administración de usuarios de los asuntos que llegan mediante oficios impresos en la Auditoría Superior<p class="responsable">Elaborado por María Berenice Galaviz Tovar</p><p class="responsable">Empresa: TELEM</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>Desarrollo de aplicación financiera: Módulo web para el ingreso de datos, módulos web para las gráficas de visualización<p class="responsable">Elaborado por José de Jesús Carbajal Gutiérrez</p><p class="responsable">Empresa: AISE (Asesoría Integral de Software Educativo)</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>MPM-Migración de datos, pruebas o programas transacciones manuales de procesos<p class="responsable">Elaborado por Juan Cralos Ortíz Vaca</p><p class="responsable">Empresa: Auditoría Superior del Estado</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>Desarrollo de página y sistema en FLEX<p class="responsable">Elaborado por Omar Cerda Carrillo</p><p class="responsable">Empresa: Auditoría Superior del Estado</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>Sistema de asignación de coordenas<p class="responsable">Elaborado por Noé de Jesús Ramos Crispin</p><p class="responsable">Empresa: IPSE Software Factory S.A de C.V</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>Metodología para el desarrollo de proyectos. Análisis y desarrollo de aplicaciones con programación PROGRESS<p class="responsable">Elaborado por María del Rosario Blanco Hernández</p><p class="responsable">Empresa: Aceros San Luis S.A de C.V</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>Modificación y Actualización del Sistema de Tallas<p class="responsable">Elaborado por Oziel Alberto Barbosa Moreno</p><p class="responsable">Empresa: NEOCEN SISTEMAS</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>Sistema de Información para personas que efectúan una demanda<p class="responsable">Elaborado por Marina Aguilar Carmona</p><p class="responsable">Empresa: PROCURADURÍA GENERAL DE JUSTICIA DEL ESTADO DE SAN LUIS POTOSÍ</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>Sistema de Administración<p class="responsable">Elaborado por Anabel Escandón Gaspar</p><p class="responsable">Empresa: PROCURADURÍA GENERAL DE JUSTICIA DEL ESTADO DE SAN LUIS POTOSÍ</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>Sistema de Administración<p class="responsable">Elaborado por Enrique Sánchez Bravo</p><p class="responsable">Empresa: PROCURADURÍA GENERAL DE JUSTICIA DEL ESTADO DE SAN LUIS POTOSÍ</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>Modificación y Actualización del Sistema de Tallas<p class="responsable">Elaborado por Juan Antonio Ramos Blanco</p><p class="responsable">Empresa: NEOCEN SISTEMAS</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>Galería de Imágenes<p class="responsable">Elaborado por José Israel Tapía Hernández</p><p class="responsable">Empresa: MESSICOM</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>Ese Gran Día<p class="responsable">Elaborado por Juana María Hernández</p><p class="responsable">Empresa: WEBTECH</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>Sistematización del Centro de Asistencia Técnica Informática<p class="responsable">Elaborado por María del Socorro Carrizales Cervantes</p><p class="responsable">Empresa: CONSEJO ESTATAL DE SEGURIDAD PÚBLICA</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>Interfaz para la Consulta de Ordenes de Producción: Aplicación que automatiza las Interfaces del Sistema AS400<p class="responsable">Elaborado por Viridiana Elizabeth Tovar Valdez</p><p class="responsable">Empresa: THYSSENKRUPP MEXINOX</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>Desarrollo del sistema de administración del conocimiento de la Dirección de Planeación, evaluación y Proyectos Especiales de los Servicios de Salud de San Luis Potosí<p class="responsable">Elaborado por José Julio Miranda Medina</p><p class="responsable">Empresa: Servicion de Salud San Luis Potosí</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>Neocen Optica<p class="responsable">Elaborado por María de Lourdes Rodríguez González</p><p class="responsable">Empresa: NEOCEN SISTEMAS</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                        <li>Neocen Optica<p class="responsable">Elaborado por María Goreti Salas Sánchez</p><p class="responsable">Empresa: NEOCEN SISTEMAS</p><p class="responsable">Asesor: Omar Montaño Rivas</p></li>
+                    </ul>
+                </div>
+            </div>
+            <button style="margin-left: 5vw;"><a href="#inicio" >REGRESAR</a></button><!--Botón que devuelve al inicio de la página-->
+        </section>
+        <hr class="hr2" style="margin-top: -2vh; margin-left: 9vw; margin-right: 9vw; margin-bottom: 5vh;">
+        <section id="residencias"><!--Sección de información de residencias profesionales-->
+            <div class="container2"  style="line-height: 30px;">
+                <h3 style="margin-bottom: 4vh; margin-top: -14vh; margin-left: -2vh;"><span class="palito">| </span>&nbsp;Residencias profesionales</h3>
+                <div>
+                    <h3 style="margin-bottom: 4vh;margin-left: -2vh;"><span class="palitoAzul">| </span>&nbsp;Objetivo</h3>
+                    <p>El objetivo de las residencias profesionales es que el estudiante adquiera experiencia laboral y/o
+                        profesional en el momento de su formación académica mediante la incorporación a una
+                        institución que permita la elaboración de proyecto profesional vinculado con su especialidad.</p>
+
+                    <h3 style="margin-bottom: 4vh; margin-left: -2vh;"><span class="palitoAzul">| </span>&nbsp;Información General Sobre la Residencia para Alumnos</h3>
+                    <ul>
+                        <li>Se puede cursar la residencia una vez aprobado el 85% de los créditos del Plan de
+                            Estudios</li>
+                        <li>La Residencia Profesional tiene un valor curricular de 10 créditos</li>
+                        <li>Forma parte de la curricula de la carrera y es obligatoria.</li>
+                        <li>Tiene una duración de 6 meses cubriendo 480 horas como mínimo para Ingenierios.
+                                Ingenieros Técnicos y Profesionales Asociados tienen que cumplir otro número de horas.</li>
+                        <li>Puede ser desarrollado en medio tiempo (4 horas diarias) o tiempo completo (8 horas
+                                    diarias).</li>
+                        <li>Los proyectos deben de dejar un beneficio a la empresa o institución, así como a la
+                                        sociedad y al propio estudiante.</li>
+                        <li>Se presentan avances al asesor interno.</li>
+                    </ul>
+                    <h3 style="margin-bottom: 4vh; margin-left: -2vh;"><span class="palitoAzul">| </span>&nbsp;Requisitos de la Academia</h3>
+                    <ul>
+                        <li>Se necesita un Asesor Interno, el cuál es un profesor de la Universidad Politécnica de San
+                            Luis Potosí.</li>
+                        <li>Se necesita un Asesor Externo, el cuál laborá en la organización dondé se esta realizando
+                                la residencia.</li>
+                        <li>Leer el Manual de Operación de Residencias Profesionales.</li>
+                        <li>Completar los formatos requeridos para las diferentes etapas de la residencias.</li>
+                        <li>El asesor interno liberará y acreditará la residencia una vez que el proyecto se encuentre
+                                    terminado.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="boton2"><!--Contenedor que alinea botón a la derecha-->
+                <button><a href="#inicio">REGRESAR</a></button><!--Botón que dirige al inicio de la página-->
+                </div>
+        </section>
+        <footer>
+            <p style="text-align: center; line-height: 30px;"><strong>Derechos de autor&copy; 2024. Todos los derechos reservados.</strong>
+            <br>Urbano Villalón num.500, Col. La Ladrillera, San Luis Potosí, S.L.P. México, C.P. 78363 </p>
+        </footer>
+        <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq3132ba5cb74a18b782ca86e17f6d700e1b6e9bf7a532b5df87cda8fab0532d1b" defer></script>
+    </body>
+</html>
